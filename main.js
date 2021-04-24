@@ -4,8 +4,8 @@ const consoleInput = require ('./modules/console-input.js');
 
 consoleInput ('Enter: ', (error, message) => {
     if (error) {
-        console.log (error.message);
+        console.log (`Error: ${error.message}`);
     } else {
-        console.log (message);
+        console.log (`Entered: ${message}`);
     }
 });
